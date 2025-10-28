@@ -17,13 +17,11 @@ uv sync
 
 # Install browser automation engines
 camoufox fetch    # Firefox-based (default, recommended)
-# OR
-playwright install chromium    # Alternative: Chromium support
 ```
 
 ### Basic Usage
 ```bash
-# Analyze LAX → JFK flights for December 15, 2025 (using default CamouFox)
+# Analyze LAX → JFK flights for December 15, 2025
 uv run main.py -o LAX -d JFK --date 2025-12-15 -p 1 -f logs/output.json
 
 # With debug logging
